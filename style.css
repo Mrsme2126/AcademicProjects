@@ -1,0 +1,100 @@
+/* --tea-green: #ccd5ae;
+--beige: #e9edc9;
+--cornsilk: #fefae0;
+--papaya-whip: #faedcd;
+--buff: #d4a373;
+ */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Oswald", sans-serif;
+    
+}
+header{
+    min-height: 50px;
+    background-color: #e9edc9;
+    min-height: 10vh;
+}
+header h1   {
+    margin-top:2px;
+ 
+    padding-left: 10px;
+}
+nav ul{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: auto;
+    padding: 0;
+}
+nav ul li{
+    
+    display: inline-block;
+    margin: 1px;
+    padding: 10px;
+    list-style-type: none;
+    min-width: 50px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+
+}
+nav ul li a:hover,header h1:hover {
+    color: #d4a373;
+    text-decoration: underline;
+}
+main{
+    border: 1px solid black;
+    margin-top: 5px;
+    min-height: 80vh;
+}
+main h2{
+    text-align: center;
+    background-color: #e9edc9;
+    margin-top: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+main .display{
+    display: flex;
+    column-gap: 10px;
+    margin:10px;
+    
+}
+main .display >div{
+    border: 1px solid #faedcd;
+    min-height: 400px;
+   
+}
+main .display div > h3{
+   padding: 0;
+   margin: 0;
+   background-color:#faedcd;
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+   text-align: center;
+}
+footer{
+    text-align: center;
+    background-color: #e9edc9;
+    margin-top:0 ;
+   
+    min-height: 10vh;
+    padding: 10px;
+}
+@media (max-width:600px){
+    nav ul{
+        position: static;
+        top: 10px;
+       left: 10px;
+       display: block;
+    }
+    main .display{
+        flex-direction: column;
+    }
+}
