@@ -1,7 +1,9 @@
 import React from 'react';
 import { colors } from './src/global/styles';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
-import SignInScreen from './src/screens/authScreens/SignInScreen';
+import RootNavigator from './src/navigation/RootNavigator';
+
+
 
 
 export default function App() {
@@ -16,11 +18,7 @@ export default function App() {
       backgroundColor = {colors.statusbar}
     />
     </View>
-    <View>
-
-
-        <SignInScreen/>
-    </View>
+   <RootNavigator/>
       
     </View>
   );
@@ -31,4 +29,5 @@ const styles = StyleSheet.create({
     flex: 1,
  
   },
+
 });

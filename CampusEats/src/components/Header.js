@@ -5,7 +5,7 @@ import { Icon } from "react-native-elements";
 
 
 
-export default function Header({title,type}) {
+export default function Header({title,type,navigation}) {
 
 
 
@@ -17,7 +17,9 @@ export default function Header({title,type}) {
                 name = {type}
                 color={colors.headerText}
                 size={28}
-                onPress={()=>{}}
+                onPress={()=>{
+                    navigation.navigate('SignInWelcomeScreen')
+                }}
             />
         </View>
             <View>
