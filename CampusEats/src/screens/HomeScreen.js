@@ -9,6 +9,7 @@ import {
 	Image,
 	SafeAreaView,
 	Dimensions,
+	StatusBar
 } from "react-native";
 import React, { useState } from "react";
 import { Icon } from "react-native-elements";
@@ -24,6 +25,12 @@ const HomeScreen = ({navigation}) => {
 	const [indexCheck, setindexCheck] = useState(true);
 	return (
 		<View style={styles.container}>
+                <StatusBar
+				    translucent
+					barStyle="light-content"
+					backgroundColor="rgba(255, 140, 82,1)"
+				/>
+
 			<HomeHeader navigation={navigation} />
 			<ScrollView
 				stickyHeaderIndices={[0]}
@@ -309,6 +316,8 @@ export default HomeScreen;
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		paddingTop:20
+		
 	},
 	deliveryButton: {
 		paddingHorizontal: 20,
